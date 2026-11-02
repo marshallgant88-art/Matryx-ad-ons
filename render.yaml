@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: matryx-addons
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
