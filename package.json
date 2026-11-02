@@ -1,0 +1,1 @@
+{"description":"MATRYX addon service: EXT.to Torrents + OnlyFlix Bridge (zero dependencies)","engines":{"node":">=18"},"main":"server.js","name":"matryx-addon-service","private":true,"scripts":{"start":"node server.js"},"version":"1.0.0"}
