@@ -71,6 +71,12 @@ const server = http.createServer(async (req, res) => {
       const streams = await bridge.getBridgeStreams(q.type, q.imdb, q.season, q.episode);
       return sendJson(res, 200, { streams });
     }
+    if (pathname === '/diag/mb-probe') {
+      const u = new URL(req.url, 'http://localhost');
+      const out = await bridge.mbDiagProbe({ key: u.searchParams.get('key'), subject: u.searchParams.get('subject') });
+      if (!out) return sendJson(res, 404, { error: 'not found', pathname });
+      return sendJson(res, 200, out);
+    }
     return sendJson(res, 404, { error: 'not found', pathname });
   } catch (err) {
     // Addon protocol: stream endpoints should answer [] rather than 500 where possible,
