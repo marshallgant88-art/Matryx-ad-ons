@@ -1,0 +1,35 @@
+{
+  "providers": [
+    {
+      "enabled": true,
+      "id": "vidora",
+      "timeoutMs": 180000
+    },
+    {
+      "enabled": true,
+      "id": "balance",
+      "timeoutMs": 300000
+    },
+    {
+      "enabled": true,
+      "id": "nontongo",
+      "timeoutMs": 240000
+    },
+    {
+      "enabled": true,
+      "id": "vidfast",
+      "timeoutMs": 180000
+    },
+    {
+      "enabled": true,
+      "id": "vidapi",
+      "timeoutMs": 300000
+    },
+    {
+      "enabled": true,
+      "id": "cdnm",
+      "timeoutMs": 180000
+    }
+  ],
+  "version": 1
+}

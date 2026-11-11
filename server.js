@@ -52,7 +52,7 @@ const server = http.createServer(async (req, res) => {
         },
         addons: {
           ext: { manifest: '/ext/manifest.json', ...ext.getStatus() },
-          bridge: { manifest: '/bridge/manifest.json', providers: bridge.getStatus() },
+          bridge: { manifest: '/bridge/manifest.json', providers: bridge.getStatus(), roster: bridge.getRosterInfo() },
         },
       });
     }
