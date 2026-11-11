@@ -11,7 +11,7 @@
       "timeoutMs": 300000
     },
     {
-      "enabled": false,
+      "enabled": true,
       "id": "nontongo",
       "timeoutMs": 240000
     },
